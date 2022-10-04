@@ -1,6 +1,9 @@
 .content {
+  position: absolute;
   width: 574px;
-  padding-right: 160px;
+  // padding-right: 160px;
+  left: calc(50% - 574px / 2 + 309px);
+  top: 306px;
 }
 
 p {
@@ -48,7 +51,6 @@ span {
 h3 {
   width: 574px;
   height: 56px;
-  padding-right: 160px;
   color: #4f4f4f;
 
   font-weight: 300;
@@ -59,21 +61,30 @@ h3 {
 }
 
 button {
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 
   padding: 16px;
-  margin-top: 68px;
   gap: 10px;
 
-  position: absolute;
   width: 320px;
-  height: 55px;
-  left: calc(50% - 320px / 2 + 436px);
-  top: 622px;
+  right: 0;
+  top: 311px;
 
   background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
   border-radius: 10px;
+}
+
+.button {
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #ffffff;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
