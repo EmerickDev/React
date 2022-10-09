@@ -11,6 +11,7 @@ img {
 .content {
   position: absolute;
   width: 574px;
+  padding-right: 160px;
   left: calc(50% - 287px + 309px);
   top: 306px;
 }
@@ -55,25 +56,33 @@ span {
 h3 {
   width: 574px;
   height: 56px;
-  color: #4f4f4f;
-  font-weight: 300;
-  font-size: 24px;
+  padding-right: 160px;
   font-family: "Helvetica";
   font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
   line-height: 28px;
+  text-align: right;
+  color: #4f4f4f;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 button {
-  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 16px;
   gap: 10px;
+  position: absolute;
   width: 320px;
-  right: 0;
-  top: 311px;
+  /* height: 55px; */
+  right: 160px;
+  /* left: 1032px; */
+  /* bottom: 305px; */
+  margin-top: 52px;
   background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
   border-radius: 10px;
 }
@@ -87,6 +96,83 @@ button {
   flex-grow: 0;
 }
 
+@media only screen and (max-width: 960px) {
+  #root {
+    max-width: 960px;
+  }
+  body {
+    position: relative;
+    display: flex;
+  }
+  img {
+    position: absolute;
+    width: 311px;
+    height: 548.27px;
+    left: calc(50% - 155.5px + 0.5px);
+    top: 379px;
+    filter: drop-shadow(0px 0px 33.1283px rgba(0, 0, 0, 0.05));
+    border-radius: 24.8462px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 880px;
+    height: 270px;
+    left: calc(50% - 440px);
+    top: 60px;
+  }
+  .content > p {
+    width: 574px;
+    height: 74px;
+    left: 200px;
+    top: 59px;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    text-align: center;
+  }
+  .subtext {
+    width: 521px;
+    height: 56px;
+  }
+  h3 {
+    position: relative;
+    padding: 0 16px 0 0;
+    color: #4f4f4f;
+    top: 125px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    left: calc(50% - 219.5px);
+  }
+  button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    position: absolute;
+    width: 320px;
+    height: 55px;
+    left: calc(50% - 160px);
+    top: 900px;
+    background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+    border-radius: 10px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
