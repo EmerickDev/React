@@ -11,9 +11,11 @@ const Content = () => {
             Easily host and share events with your friends across any social
             media.
           </h3>
-          <button type="submit">
-            <p className="button">🎉 Create my event</p>
-          </button>
+          <div>
+            <button type="submit">
+              <p className="button">🎉 Create my event</p>
+            </button>
+          </div>
         </div>
       </div>
     </>
